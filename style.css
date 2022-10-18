@@ -92,11 +92,17 @@ form {
   font-size: 1rem;
   color: red;
   margin: 0.3rem;
+  display: none;
 }
 .error span i {
   margin-right: 0.2rem;
 }
-
+.invalid span{
+  display: flex;
+}
+.invalid .input-elm input{
+  border: 1px solid red;
+}
 .submit:hover {
   background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   color: white;
