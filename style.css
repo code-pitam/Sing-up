@@ -77,6 +77,10 @@ form {
   margin-bottom: 2rem;
   width: 100%;
 }
+.input-elm{
+  width: 100%;
+  height: 3.3rem;
+}
 .input-elm input {
   width: 100%;
   height: 3.3rem;
@@ -86,6 +90,9 @@ form {
   outline: none;
   padding-left: 1rem;
   font-size: 1.2rem;
+}
+.top i{
+  top: 66%;
 }
 .error span {
   display: flex;

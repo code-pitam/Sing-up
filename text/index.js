@@ -8,7 +8,8 @@ const form = document.querySelector("form"),
   userinput = inputelm1.querySelector(".user"),
   passfield = sing.querySelector(".pass-field"),
   inputelm2 = passfield.querySelector(".input-elm"),
-  passinput = inputelm2.querySelector(".pass");
+  passinput = inputelm2.querySelector(".pass"),
+  showicon = inputelm2.querySelector(".show-hide");
 console.log(passinput);
   // full name validation
 
@@ -57,7 +58,13 @@ function epass(){
   }
 passfield.classList.remove("invalid");
 }
-
+function eshow(){
+  const passp= /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+  if (passinput.value.match(passp)){
+    return passfield.classList.add("top");
+  }
+passfield.classList.remove("top");
+}
 
 
 console.log(eyeicons);
@@ -67,7 +74,9 @@ form.addEventListener("submit", (e) => {
   checkname();
   checkuser();
 epass();
+eshow();
   nameinput.addEventListener("keyup", checkname);
   userinput.addEventListener("keyup", checkuser);
   passinput.addEventListener("keyup", epass);
+  passinput.addEventListener("keyup", eshow);
 });
