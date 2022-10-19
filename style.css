@@ -103,6 +103,17 @@ form {
 .invalid .input-elm input{
   border: 1px solid red;
 }
+.show-hide{
+  position: absolute;
+  right: 7%;
+  top: 62%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #919191;
+}
+
+
+
 .submit:hover {
   background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   color: white;
@@ -127,5 +138,10 @@ form {
   .glass{
     width: 75%;
 
+  }
+  .show-hide{
+   
+    right: 9%;
+ 
   }
 }
